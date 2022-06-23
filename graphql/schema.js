@@ -3424,6 +3424,22 @@ const typeDefs = gql`
     zipcode: String
   }
 
+  interface DisplayProperties @relationshipProperties {
+    test: String
+  }
+
+  interface ManagesProperties @relationshipProperties {
+    test: String
+  }
+
+  interface IsProperties @relationshipProperties {
+    test: String
+  }
+
+  interface MajorOfProperties @relationshipProperties {
+    test: String
+  }
+
   interface CommunicatesProperties @relationshipProperties {
     created_at: BigInt!
     devise: String!
